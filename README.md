@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Tabla de Contenido
+## Tabla de Contenido
 1. [Ruta Seguida y Sistema Operativo](#1-ruta-seguida-y-sistema-operativo)
 2. [Parte 1 — Instalación del Entorno (Ruta A)](#2-parte-1--instalación-del-entorno-ruta-a)
    - [2.1 Descarga del JDK 21 LTS (Temurin)](#21-descarga-del-jdk-21-lts-eclipse-temurin)
@@ -221,12 +221,12 @@ Se abrió `Taller1.java` y se pegó el código del siguiente apartado. El IDE no
 ### 3.4 Código Completo — `Taller1.java`
 
 Cumple **todos** los requisitos de la Parte 2.4:
-- ✅ Mensaje inicial con `println`
-- ✅ 8 variables primitivas (una de cada tipo)
-- ✅ 2 constantes `final` (`GRAVEDAD` y `ANIO_ACTUAL`)
-- ✅ Impresión identificando el tipo (`"Valor byte: " + miByte`)
-- ✅ Demostración `print` vs `println`
-- ✅ Paquete `com.mycompany.taller1`
+- Mensaje inicial con `println`
+- 8 variables primitivas (una de cada tipo)
+- 2 constantes `final` (`GRAVEDAD` y `ANIO_ACTUAL`)
+- Impresión identificando el tipo (`"Valor byte: " + miByte`)
+- Demostración `print` vs `println`
+- Paquete `com.mycompany.taller1`
 
 ```java
 package com.mycompany.taller1;
@@ -364,11 +364,11 @@ La **constante `final`** no es un tipo, es una regla: `final double GRAVEDAD = 9
 
 | # | Dificultad | Cómo se manifestó | Solución aplicada | Estado |
 |---|------------|-------------------|-------------------|--------|
-| 1 | **Confusión JDK 21 vs JDK 26** | En Adoptium el LTS recomendado es 21, pero Codelerity ofrece bundle con JDK 26. No sabía cuál instalar. | Investigar que **LTS** significa soporte largo (5+ años) y es lo visto en clase. 26 es versión más nueva pero no LTS estable. Se instaló **Temurin 21 LTS** por separado y NetBeans 31 aparte para seguir la guía del docente. | ✅ Resuelto |
-| 2 | **Variables de entorno no aparecían** | Tras instalar, no encontraba `JAVA_HOME` en `Equipo > Propiedades`. | Revisar captura de instalación personalizada (Fig. 2): el MSI marca "Establecer la variable JAVA_HOME" y "Añadir al PATH" automáticamente. Verificación con `echo %JAVA_HOME%` confirmó que sí se creó en `C:\Program Files\Eclipse Adoptium\...`. No hubo que hacerlo manual. | ✅ Resuelto |
-| 3 | **`float` sin `f` daba error** | Al compilar `float promedio = 4.5;` NetBeans subrayó en rojo: *incompatible types: possible lossy conversion from double to float* | Investigar que `4.5` es `double` por defecto. Añadir `f`: `4.5f`. Igual para `long`: añadir `L`. | ✅ Resuelto |
-| 4 | **Proyecto Maven pedía activar característica** | Al elegir Java with Maven decía *This feature is not yet enabled. Press Next to activate it.* | Hacer clic en Next, NetBeans descarga plugins Maven en segundo plano. Esperar 1 minuto y reintentar. | ✅ Resuelto |
-| 5 | **BOM UTF-8 al compilar** | `javac` daba `illegal character: \ufeff` por guardar con BOM | Guardar el `.java` como UTF-8 sin BOM (usar NetBeans o Notepad++ > Codificación > UTF-8 sin BOM). Recompilado y `BUILD SUCCESS`. | ✅ Resuelto |
+| 1 | **Confusión JDK 21 vs JDK 26** | En Adoptium el LTS recomendado es 21, pero Codelerity ofrece bundle con JDK 26. No sabía cuál instalar. | Investigar que **LTS** significa soporte largo (5+ años) y es lo visto en clase. 26 es versión más nueva pero no LTS estable. Se instaló **Temurin 21 LTS** por separado y NetBeans 31 aparte para seguir la guía del docente. | Resuelto |
+| 2 | **Variables de entorno no aparecían** | Tras instalar, no encontraba `JAVA_HOME` en `Equipo > Propiedades`. | Revisar captura de instalación personalizada (Fig. 2): el MSI marca "Establecer la variable JAVA_HOME" y "Añadir al PATH" automáticamente. Verificación con `echo %JAVA_HOME%` confirmó que sí se creó en `C:\Program Files\Eclipse Adoptium\...`. No hubo que hacerlo manual. | Resuelto |
+| 3 | **`float` sin `f` daba error** | Al compilar `float promedio = 4.5;` NetBeans subrayó en rojo: *incompatible types: possible lossy conversion from double to float* | Investigar que `4.5` es `double` por defecto. Añadir `f`: `4.5f`. Igual para `long`: añadir `L`. | Resuelto |
+| 4 | **Proyecto Maven pedía activar característica** | Al elegir Java with Maven decía *This feature is not yet enabled. Press Next to activate it.* | Hacer clic en Next, NetBeans descarga plugins Maven en segundo plano. Esperar 1 minuto y reintentar. | Resuelto |
+| 5 | **BOM UTF-8 al compilar** | `javac` daba `illegal character: \ufeff` por guardar con BOM | Guardar el `.java` como UTF-8 sin BOM (usar NetBeans o Notepad++ > Codificación > UTF-8 sin BOM). Recompilado y `BUILD SUCCESS`. | Resuelto |
 
 > No quedaron pendientes. Todos los errores fueron documentados y resueltos, cumpliendo el criterio "Manejo de dificultades".
 
