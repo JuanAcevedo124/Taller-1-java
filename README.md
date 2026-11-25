@@ -1,8 +1,7 @@
 # Actividad Calificable — Configuración del Entorno e Introducción a Java
 
-> **Repositorio:** `java-instalacion-[NombreApellido]`  
 > **Asignatura:** Introducción a Java — Configuración del entorno y variables básicas  
-> **Estudiante:** [Tu Nombre Completo] — CampusLands  
+> **Estudiante:** Juan José Acevedo Morales — Campuslands  
 > **Fecha:** 28 de agosto de 2026
 
 ---
@@ -377,7 +376,7 @@ La **constante `final`** no es un tipo, es una regla: `final double GRAVEDAD = 9
 ## 6. Estructura del Repositorio
 
 ```
-java-instalacion-[NombreApellido]/
+Taller-1-java/
 ├── README.md                          # Este archivo (documentación completa)
 ├── assets/                            # Evidencias visuales
 │   ├── 01-adoptium-temurin-jdk21.png
@@ -397,16 +396,6 @@ java-instalacion-[NombreApellido]/
 │       └── Taller1.java              # Código fuente con 8 primitivos + final
 ├── out/                               # .class compilados (generado)
 └── pom.xml                            # Descriptor Maven (generado por NetBeans)
-```
-
-Sugerido para GitHub:
-```bash
-git init
-git add .
-git commit -m "feat: taller 1 - JDK 21 + NetBeans 31 + programa 8 primitivos"
-git branch -M main
-git remote add origin https://github.com/[tu-usuario]/java-instalacion-[NombreApellido].git
-git push -u origin main
 ```
 
 ---
@@ -452,6 +441,7 @@ Requisitos: JDK 21 en `PATH` y `JAVA_HOME`.
 - Oracle Java SE Documentation — Primitive Data Types: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
 - Apuntes de clase — Configuración JAVA_HOME y Path en Windows
 
----
+## Autor
 
-> **Entregable completado:** README + código fuente + 12 capturas como assets. Listo para subir a `java-instalacion-[NombreApellido]` y entregar el enlace según indique el docente.
+Juan José Acevedo Morales, desarrollador de software junior.
+[Portafolio](https://juanacevedo124.github.io/Portafolio/) | [GitHub](https://github.com/JuanAcevedo124) | [LinkedIn](https://www.linkedin.com/in/juan-acevedo-b24759450/)
